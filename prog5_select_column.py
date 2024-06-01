@@ -1,8 +1,6 @@
 """
 W.A.P  to select the 'Name' and 'Score' columns from the Dataframe.
-
 """
-
 import pandas as pd
 import numpy as np
 
@@ -15,7 +13,6 @@ exam_data = {
 }
 
 df = pd.DataFrame(exam_data)
-print(df)
-print(df['name'])
+print("Select all data of Name Columns", df['name'])
 print(df['score'])
 print(df[['name','score']])
