@@ -1,5 +1,10 @@
-import pandas as pd
+
+"""
+Selete the row from score columns where missing or NaN
+"""
+
 import numpy as np
+import pandas as pd
 
 # Sample DataFrame
 exam_data = {
@@ -9,16 +14,6 @@ exam_data = {
     'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']
 }
 
-labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
-
 df = pd.DataFrame(exam_data)
-print(df)
-
-# print Information of DataFrame
-print(df.info())
-
-# Conver to Json
-df.to_json('demofile.json')
-
-
+print(df[df['score'].isnull()])
 
