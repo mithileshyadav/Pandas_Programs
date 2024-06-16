@@ -1,3 +1,7 @@
+"""
+Write a Program  to get attempts is greate than 2 and Score Column is less than 56
+
+"""
 import pandas as pd
 
 exam_data = {
